@@ -1,4 +1,4 @@
-import React, { useContext, useState } from 'react'
+import React, { useContext } from 'react'
 import { useNavigate } from 'react-router-dom';
 import CartContext from '../store/CartContext';
 import productsArr from '../productsList';
@@ -19,9 +19,9 @@ const Container = () => {
             <p>{e.title}</p>
             <div className='img'>
               <img
-                className="rounded-3"
+                
                 onClick={() => navigate(`/products/${e.id}`)}
-                src={e.imageUrl}
+                src={e.imageUrl} style={{width:"400px",height:"400px"}}
                 alt={e.title}
               />
             </div>

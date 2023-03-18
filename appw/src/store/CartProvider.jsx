@@ -15,7 +15,7 @@ const CartProvider = ({ children }) => {
     //  }`;
 
   var deleteItem = async (id) => {
-    const url = `https://crudcrud.com/api/2cced2cb59ea45eab27f234e5d584674/cart${
+    const url = `https://crudcrud.com/api/7065bd1a432a4286823072bea6f26b59/cart${
       localStorage.getItem("userEmail").split("@")[0]
       }`
       const res = await axios.delete(`${url}/${id}`);
@@ -23,14 +23,14 @@ const CartProvider = ({ children }) => {
   }
   
   var setItems = async () => {
-      const url = `https://crudcrud.com/api/2cced2cb59ea45eab27f234e5d584674/cart${
+      const url = `https://crudcrud.com/api/7065bd1a432a4286823072bea6f26b59/cart${
         localStorage.getItem("userEmail").split("@")[0]
       }`;
        const res = await axios.get(url);
        setCartItems(res.data);
     };
   var addItem = async (item) => {
-      const url = `https://crudcrud.com/api/2cced2cb59ea45eab27f234e5d584674/cart${
+      const url = `https://crudcrud.com/api/7065bd1a432a4286823072bea6f26b59/cart${
         localStorage.getItem("userEmail").split("@")[0]
       }`;
     

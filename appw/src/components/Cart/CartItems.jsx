@@ -1,7 +1,18 @@
-import React, { useContext } from "react";
+import React, { useContext, useState, useEffect } from "react";
 import CartContext from "../../store/CartContext";
+
 const CartItems = () => {
-     const { cartItems,deleteItem} = useContext(CartContext);
+  const { cartItems, deleteItem } = useContext(CartContext);
+  const [cartTotal, setCartTotal] = useState(0);
+
+  useEffect(() => {
+    let total = 0;
+    cartItems.forEach((item) => {
+      total += item.price * item.quantity;
+    });
+    setCartTotal(total);
+  }, [cartItems]);
+
   return (
     <>
       <div className=" d-flex justify-content-around">
@@ -34,6 +45,9 @@ const CartItems = () => {
             </div>
           </div>
         ))}
+      </div>
+      <div className="d-flex justify-content-end mt-3">
+        <h5>Total Amount: ${cartTotal}</h5>
       </div>
     </>
   );

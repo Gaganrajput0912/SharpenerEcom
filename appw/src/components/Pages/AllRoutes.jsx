@@ -1,5 +1,6 @@
 import React from 'react'
 import { Route, Routes } from 'react-router-dom'
+import ProductPage from './ProductPage';
 const Login = React.lazy(() => import("../Auth/Login"));
 const About = React.lazy(() => import("./About"));
 const ContactUs = React.lazy(() => import("./ContactUs"));
@@ -20,6 +21,7 @@ const AllRoutes = () => {
         <Route path="/ContactUs" element={<React.Suspense fallback={<div className='spinner-border m-5'></div>}> <ContactUs /></React.Suspense>} />
         <Route path="/login" element={<React.Suspense fallback={<div className='spinner-border m-5'></div>}><Login /></React.Suspense> } />
         <Route path="*" element={<React.Suspense fallback={<div className='spinner-border m-5'></div>}><Login /></React.Suspense> } />
+        <Route path="/products" element={<React.Suspense fallback={<div className='spinner-border m-5'></div>}><ProductPage /></React.Suspense> } />
       </Routes>
     </div>
   );

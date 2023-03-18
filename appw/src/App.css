@@ -37,21 +37,20 @@
   }
 }
 
-.header{
-  background-color: #0081C9;
+.header {
+  background-color: #0081c9;
 }
 .header button {
-   color : white;
+  color: white;
 }
 
-#link{
+#link {
   text-decoration: none;
   color: white;
 }
-#link:hover{
-color: black;
+#link:hover {
+  color: black;
 }
-
 
 .img {
   border: 2px solid #fff;
@@ -59,10 +58,9 @@ color: black;
 }
 
 .img img {
-      transition: all 1s ease-in-out;
+  transition: all 1s ease-in-out;
 }
 
 .img:hover img {
-      transform: scale(2,2);
-    cursor: pointer;
+  cursor: pointer;
 }

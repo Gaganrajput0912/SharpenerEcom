@@ -1,53 +1,57 @@
+import img1 from "./assets/product1of1.jpg";
+import img4 from "./assets/product3ofd.jpg";
+import img2 from "./assets/product3of1.jpg";
+import img3 from "./assets/product4of1.jpg";
 const productsArr = [
   {
     id: 1,
-    title: "Colors",
+    title: "Shirt",
 
-    price: 100,
+    price: 400,
     ProductReview: [
       { name: "Jaimin", review: "Nice product !" },
       { name: "Nidhi", review: "recommended!" },
       { name: "Bharat", review: "Quality of product is not so good!" },
     ],
-    imageUrl: "https://prasadyash2411.github.io/ecom-website/img/Album%201.png",
+    imageUrl: img1,
   },
 
   {
     id: 2,
-    title: "Black and white Colors",
+    title: "lower",
 
-    price: 50,
+    price: 450,
     ProductReview: [
       { name: "Jaimin", review: "Nice product !" },
       { name: "Nidhi", review: "recommended!" },
       { name: "Bharat", review: "Quality of product is not so good!" },
     ],
-    imageUrl: "https://prasadyash2411.github.io/ecom-website/img/Album%202.png",
+    imageUrl: img2,
   },
 
   {
     id: 3,
-    title: "Yellow and Black Colors",
+    title: "Suit",
 
-    price: 70,
+    price: 570,
     ProductReview: [
       { name: "John", review: "Price over !" },
       { name: "Noah", review: "Not recommended!" },
     ],
-    imageUrl: "https://prasadyash2411.github.io/ecom-website/img/Album%203.png",
+    imageUrl: img3,
   },
 
   {
     id: 4,
-    title: "Blue Color",
+    title: "Saree",
 
-    price: 100,
+    price: 800,
     ProductReview: [
       { name: "Otis", review: "Superbb !!!" },
       { name: "Meave", review: "Poor performance!" },
       { name: "Gerald", review: "Genuine company!" },
     ],
-    imageUrl: "https://prasadyash2411.github.io/ecom-website/img/Album%204.png",
+    imageUrl: img4,
   },
 ];
 

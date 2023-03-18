@@ -47,7 +47,7 @@ const CartItems = () => {
         ))}
       </div>
       <div className="d-flex justify-content-end mt-3">
-        <h5>Total Amount: ${cartTotal}</h5>
+        <h5>Total Amount : Rs {cartTotal}</h5>
       </div>
     </>
   );

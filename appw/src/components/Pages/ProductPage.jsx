@@ -3,7 +3,7 @@ import { useParams } from "react-router-dom";
 import productsArr from "../../productsList";
 const ProductPage = () => {
   const { id } = useParams();
-  let product = productsArr.find((el) => el.id == id);
+  let product = productsArr.find((el) => el.id === Number(id));
   return (
     <>
       <div className=" d-flex gap-5 m-5">

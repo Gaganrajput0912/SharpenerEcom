@@ -9,7 +9,7 @@ const productsArr = [
 
     price: 400,
     ProductReview: [
-      { name: "Jaimin", review: "Nice product !" },
+      { name: "Gagan", review: "Nice product !" },
       { name: "Nidhi", review: "recommended!" },
       { name: "Bharat", review: "Quality of product is not so good!" },
     ],
@@ -22,7 +22,7 @@ const productsArr = [
 
     price: 450,
     ProductReview: [
-      { name: "Jaimin", review: "Nice product !" },
+      { name: "Gagan", review: "Nice product !" },
       { name: "Nidhi", review: "recommended!" },
       { name: "Bharat", review: "Quality of product is not so good!" },
     ],

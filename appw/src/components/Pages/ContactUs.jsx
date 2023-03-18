@@ -11,7 +11,7 @@ const ContactUs = () => {
   const handleSubmit = async (e) => {
     e.preventDefault()
     
-    await axios.post("https://react-http-97734-default-rtdb.firebaseio.com/contacts.json",userData);
+    await axios.post("https://auth-5aa35-default-rtdb.firebaseio.com//contacts.json",userData);
   document.querySelector('form').reset()
   }
 
